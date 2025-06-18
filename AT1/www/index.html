@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pizzaria Admin</title>
+    <!-- Política de segurança -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval';
+    style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net;
+    img-src * data: content:;
+    connect-src 'self' https://pedidos-pizzaria.glitch.me;
+">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Tela Lista -->
+    <div class="app-lista container mt-4" id="applista">
+        <div class="superior list-group" id="listaPizzas">
+            <!-- Lista será inserida via JS -->
+        </div>
+        <div class="inferior mt-3">
+            <button class="botao-novo btn btn-primary" id="btnNovo">Novo</button>
+        </div>
+    </div>
+
+    <!-- Tela Cadastro -->
+    <div class="app-cadastro container mt-4" id="appcadastro" style="display: none;">
+        <div class="imagem mb-3" id="imagem" style="width: 100%; height: 200px; background-size: cover; background-position: center;"></div>
+        <div class="form">
+            <div class="form-linha mb-3">
+                <label class="form-label">Pizza:</label>
+                <input type="text" class="form-control" id="pizza" placeholder="Nome da pizza">
+            </div>
+            <div class="form-linha mb-3">
+                <label class="form-label">Preço:</label>
+                <input type="text" class="form-control" id="preco" placeholder="Preço da pizza">
+            </div>
+            <div class="botoes">
+                <button class="btn btn-secondary" id="btnFoto">Foto</button>
+                <input type="file" class="form-control mt-2" id="inputFoto" accept="image/*" style="display: none;" />
+                <button class="btn btn-success" id="btnSalvar">Salvar</button>
+                <button class="btn btn-danger" id="btnExcluir">Excluir</button>
+                <button class="btn btn-warning" id="btnCancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

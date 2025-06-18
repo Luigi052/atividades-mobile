@@ -1,0 +1,140 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    background-color: #F7D488;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 48px;
+    color: #D35400;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #873600;
+}
+
+.pizza-img {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://example.com/pizza.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.app-lista {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 95%;
+}
+
+.superior {
+    flex: 10;
+    overflow: auto;
+}
+
+.inferior {
+    flex: 1;
+}
+
+.linha {
+    position: relative;
+    padding: 10px;
+    border: 2px solid #D35400;
+    background-color: #FFF5E1;
+    font-size: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.botao-novo {
+    width: 100%;
+    height: 99%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #D35400;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-novo:hover {
+    background-color: #873600;
+}
+
+.app-cadastro {
+    display: none;
+    flex-direction: column;
+    width: 99%;
+    height: 90%;
+}
+
+.imagem {
+    flex: 4;
+    border: solid #D35400;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.form {
+    flex: 4;
+}
+
+.form-linha {
+    display: flex;
+    align-items: center;
+    margin: 20px 5%;
+}
+
+.form-linha-esq {
+    flex: 1;
+    font-weight: bold;
+    color: #873600;
+}
+
+.form-linha-dir {
+    flex: 5;
+}
+
+.botoes {
+    padding-top: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.botao {
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid whitesmoke;
+    margin: 5px;
+    background-color: #D35400;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #873600;
+}
+
+#inputFoto {
+    display: none;
+}
